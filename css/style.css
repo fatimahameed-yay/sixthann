@@ -784,19 +784,17 @@ button { font: inherit; color: inherit; }
 .vinyl-label { position: absolute !important; inset: 33%; border-radius: 50%; }
 .vinyl-label::after { content: ""; position: absolute; left: 50%; top: 50%; width: 9%; height: 9%; transform: translate(-50%, -50%); border-radius: 50%; background: var(--copper-d); z-index: 4; }
 .vinyl-label .ph-label { font-size: clamp(6px, 1.4cqw, 12px); top: 72%; }
-.mu-sides { position: absolute; left: 47%; right: 3.2em; top: 27%; display: flex; flex-direction: column; gap: 1.4em; }
-.mu-list { list-style: none; padding: 0; font-size: .8em; }
-.mu-list li { padding: .45em 0; border-bottom: 1px solid rgba(237, 230, 212, .2); line-height: 1.25; }
-.mu-list li.side { font-family: var(--sans); font-size: .72em; letter-spacing: .38em; text-transform: uppercase; color: var(--butter); border-bottom-color: rgba(251, 226, 157, .6); }
-.mu-list li.now { color: var(--butter); }
-.mu-list b { font-family: var(--sans); font-weight: 500; font-size: .75em; letter-spacing: .1em; color: var(--butter); margin-right: .5em; }
-.mu-list i { color: #e3d4bd; }
+.mu-track { position: absolute; left: 50%; right: 3.2em; top: 34%; border-top: 1px solid rgba(251, 226, 157, .6); border-bottom: 1px solid rgba(251, 226, 157, .6); padding: 1.2em 0 1.3em; }
+.mu-side { font-family: var(--sans); font-size: .55em; letter-spacing: .38em; text-transform: uppercase; color: var(--butter); }
+.mu-name { font-family: var(--didot); font-style: italic; font-size: 2.6em; line-height: 1; margin: .3em 0 .2em !important; color: #fff; }
+.mu-artist { font-family: var(--sans); font-size: .62em; letter-spacing: .26em; text-transform: uppercase; color: #e3d4bd; }
+.mu-note { font-family: var(--doodle); font-size: .85em; line-height: 1.35; color: var(--butter); margin-top: 1em !important; }
 .mu-tap { position: absolute; left: 3.2em; bottom: 5.2em; font-family: var(--doodle); font-size: .85em; color: var(--butter); }
 @container page (max-aspect-ratio: 7 / 10) {
   .vinyl { left: -14%; top: 19%; width: 21em; height: 21em; }
-  .mu-sides { left: 3.2em; top: 57%; flex-direction: row; gap: 1.2em; }
-  .mu-sides .mu-list { flex: 1; font-size: .86em; }
-  .mu-list li { padding: .6em 0; }
+  .mu-track { left: 3.2em; top: 60%; }
+  .mu-name { font-size: 3.2em; }
+  .mu-note { font-size: 1em; }
   .mu-tap { left: auto; right: 3.2em; bottom: auto; top: 33%; width: 8em; text-align: right; transform: rotate(-4deg); }
 }
 
