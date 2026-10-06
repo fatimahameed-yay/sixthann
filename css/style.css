@@ -304,7 +304,8 @@ button { font: inherit; color: inherit; }
    ========================================================= */
 .p-ad .pg { background: linear-gradient(180deg, #23345a 0%, #13213f 100%); color: #fff; }
 /* the ad photo has a white border: --zoom on the slot crops it off */
-.p-ad .ad-photo { position: absolute; left: 0; right: 0; top: 0; aspect-ratio: .774; background: transparent; }
+.p-ad .ad-photo { position: absolute; left: 0; top: 0; width: 100%; height: 129.2cqw; background: transparent; }
+.p-ad .ad-photo .ph-img img { width: 100%; height: 100%; }
 .ad-copy { display: none; }
 .ad-shade { position: absolute; left: 0; right: 0; top: 0; height: 129.2cqw; background: linear-gradient(0deg, rgba(19, 33, 63, .9) 0%, rgba(19, 33, 63, 0) 24%); }
 @container page (max-aspect-ratio: 7 / 10) {
