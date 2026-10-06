@@ -706,6 +706,23 @@
 
   pf.on("flip", () => { update(); hideHint(); });
   pf.on("changeOrientation", update);
+  // Some GPUs keep a stale, blank layer for the page that was drawn as the
+  // back of the hard cover. After every turn, nudge the visible pages so the
+  // browser re-draws them from scratch.
+  const repaint = () => {
+    requestAnimationFrame(() => {
+      $$("#book .page").forEach((el) => {
+        if (el.style.display === "none") return;
+        el.style.backfaceVisibility = "visible";
+        el.style.webkitBackfaceVisibility = "visible";
+        el.style.willChange = "transform";
+        el.style.opacity = "0.999";
+        requestAnimationFrame(() => { el.style.willChange = ""; el.style.opacity = ""; });
+      });
+    });
+  };
+  pf.on("flip", repaint);
+  window.addEventListener("resize", () => setTimeout(repaint, 120));
   pf.on("changeState", (e) => {
     if (e.data === "flipping") {
       rustle();
@@ -716,6 +733,7 @@
       }
     } else if (e.data === "read") {
       update();
+      repaint();
     }
   });
   update();
