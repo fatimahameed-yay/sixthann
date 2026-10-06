@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Vogue · The Anniversary Issue</title>
+  <meta name="description" content="Ziyad & Fatima, six months of us, as a magazine.">
+  <meta name="theme-color" content="#c9e2f0">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%238C2E3E'/%3E%3Ctext x='50' y='72' font-family='Didot,Bodoni 72,serif' font-size='70' text-anchor='middle' fill='%23EDE6D4'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Jost:wght@300..700&family=Pinyon+Script&family=Caveat:wght@400..700&family=Gloria+Hallelujah&family=Courier+Prime:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ STICKER SHEET (reused all over the magazine) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="gingO" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#f4f0dc"/><rect width="6" height="12" fill="#867B18" opacity=".42"/><rect width="12" height="6" fill="#867B18" opacity=".42"/>
+    </pattern>
+    <pattern id="gingR" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="#f6ecec"/><rect width="6" height="12" fill="#8C2E3E" opacity=".45"/><rect width="12" height="6" fill="#8C2E3E" opacity=".45"/>
+    </pattern>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdf0b8"/><stop offset=".45" stop-color="#e2bb55"/><stop offset="1" stop-color="#a87a1f"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0a2463"/><stop offset=".22" stop-color="#1e4fb8"/><stop offset=".5" stop-color="#143c97"/><stop offset=".8" stop-color="#2a63cf"/><stop offset="1" stop-color="#0b2a70"/>
+    </linearGradient>
+
+    <symbol id="s-bow" viewBox="0 0 100 80">
+      <g stroke="#5a5210" stroke-width="1.6" stroke-linejoin="round">
+        <path d="M47 42 L30 77 L39 72 L45 79 L53 45 Z" fill="url(#gingO)"/>
+        <path d="M53 42 L70 77 L61 72 L55 79 L47 45 Z" fill="url(#gingO)"/>
+        <path d="M50 38 C33 10 5 6 6 28 C7 48 33 47 50 41 Z" fill="url(#gingO)"/>
+        <path d="M50 38 C67 10 95 6 94 28 C93 48 67 47 50 41 Z" fill="url(#gingO)"/>
+        <ellipse cx="50" cy="40" rx="8" ry="9" fill="url(#gingO)"/>
+      </g>
+    </symbol>
+    <symbol id="s-bowR" viewBox="0 0 100 80">
+      <g stroke="#5e1d29" stroke-width="1.6" stroke-linejoin="round">
+        <path d="M47 42 L30 77 L39 72 L45 79 L53 45 Z" fill="url(#gingR)"/>
+        <path d="M53 42 L70 77 L61 72 L55 79 L47 45 Z" fill="url(#gingR)"/>
+        <path d="M50 38 C33 10 5 6 6 28 C7 48 33 47 50 41 Z" fill="url(#gingR)"/>
+        <path d="M50 38 C67 10 95 6 94 28 C93 48 67 47 50 41 Z" fill="url(#gingR)"/>
+        <ellipse cx="50" cy="40" rx="8" ry="9" fill="url(#gingR)"/>
+      </g>
+    </symbol>
+    <symbol id="s-star" viewBox="0 0 100 100">
+      <path d="M50 5 L62 37 L96 38 L69 59 L79 93 L50 73 L21 93 L31 59 L4 38 L38 37 Z" fill="url(#gold)" stroke="#a87a1f" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M44 24 L48 34" stroke="#fffbe6" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+    </symbol>
+    <symbol id="s-sparkle" viewBox="0 0 100 100">
+      <path d="M50 2 C54 38 62 46 98 50 C62 54 54 62 50 98 C46 62 38 54 2 50 C38 46 46 38 50 2 Z" fill="url(#gold)"/>
+    </symbol>
+    <symbol id="s-heart" viewBox="0 0 100 92">
+      <path d="M50 88 C20 68 2 50 4 28 C6 10 22 2 34 4 C42 5 47 10 50 17 C53 10 58 5 66 4 C78 2 94 10 96 28 C98 50 80 68 50 88 Z" fill="#8C2E3E"/>
+      <path d="M20 24 C24 16 30 13 36 14" stroke="#f3c3cb" stroke-width="5" stroke-linecap="round" fill="none"/>
+    </symbol>
+    <symbol id="s-daisy" viewBox="0 0 100 100">
+      <g fill="#fffdf6" stroke="#d9cfbd" stroke-width="1.5">
+        <ellipse cx="50" cy="24" rx="10" ry="20"/><ellipse cx="50" cy="24" rx="10" ry="20" transform="rotate(45 50 50)"/>
+        <ellipse cx="50" cy="24" rx="10" ry="20" transform="rotate(90 50 50)"/><ellipse cx="50" cy="24" rx="10" ry="20" transform="rotate(135 50 50)"/>
+        <ellipse cx="50" cy="24" rx="10" ry="20" transform="rotate(180 50 50)"/><ellipse cx="50" cy="24" rx="10" ry="20" transform="rotate(225 50 50)"/>
+        <ellipse cx="50" cy="24" rx="10" ry="20" transform="rotate(270 50 50)"/><ellipse cx="50" cy="24" rx="10" ry="20" transform="rotate(315 50 50)"/>
+      </g>
+      <circle cx="50" cy="50" r="13" fill="#FBE29D" stroke="#c99a2e" stroke-width="2"/>
+    </symbol>
+    <symbol id="s-cherry" viewBox="0 0 100 100">
+      <path d="M52 12 C48 32 36 46 30 60 M52 12 C58 30 66 44 70 58" stroke="#5a5210" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M52 12 C62 4 76 8 80 18 C68 22 58 20 52 12 Z" fill="#867B18"/>
+      <circle cx="30" cy="72" r="17" fill="#8C2E3E"/><circle cx="70" cy="70" r="17" fill="#a83c4f"/>
+      <circle cx="24" cy="66" r="4.5" fill="#f3c3cb"/><circle cx="64" cy="64" r="4.5" fill="#f3c3cb"/>
+    </symbol>
+    <symbol id="s-butterfly" viewBox="0 0 100 80">
+      <g stroke="#775537" stroke-width="2">
+        <path d="M48 38 C30 2 4 6 8 26 C11 40 30 42 48 40 Z" fill="#C0DDDA"/>
+        <path d="M52 38 C70 2 96 6 92 26 C89 40 70 42 52 40 Z" fill="#C0DDDA"/>
+        <path d="M48 42 C30 46 14 58 20 70 C26 78 42 66 48 46 Z" fill="#FBE29D"/>
+        <path d="M52 42 C70 46 86 58 80 70 C74 78 58 66 52 46 Z" fill="#FBE29D"/>
+      </g>
+      <rect x="47" y="24" width="6" height="40" rx="3" fill="#775537"/>
+      <path d="M49 25 C46 16 42 12 38 10 M51 25 C54 16 58 12 62 10" stroke="#775537" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="s-smiley" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="44" fill="#FBE29D" stroke="#775537" stroke-width="3"/>
+      <ellipse cx="36" cy="42" rx="4.5" ry="6.5" fill="#775537"/><ellipse cx="64" cy="42" rx="4.5" ry="6.5" fill="#775537"/>
+      <path d="M31 60 Q50 78 69 60" stroke="#775537" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <circle cx="25" cy="58" r="7" fill="#f2a7b3" opacity=".6"/><circle cx="75" cy="58" r="7" fill="#f2a7b3" opacity=".6"/>
+    </symbol>
+    <symbol id="s-strawberry" viewBox="0 0 100 100">
+      <path d="M50 94 C24 82 12 58 18 42 C24 30 38 27 50 32 C62 27 76 30 82 42 C88 58 76 82 50 94 Z" fill="#c23a50" stroke="#8C2E3E" stroke-width="2"/>
+      <g fill="#FBE29D"><ellipse cx="36" cy="50" rx="2" ry="3"/><ellipse cx="50" cy="46" rx="2" ry="3"/><ellipse cx="64" cy="50" rx="2" ry="3"/><ellipse cx="42" cy="64" rx="2" ry="3"/><ellipse cx="58" cy="64" rx="2" ry="3"/><ellipse cx="50" cy="78" rx="2" ry="3"/><ellipse cx="30" cy="62" rx="2" ry="3"/><ellipse cx="70" cy="62" rx="2" ry="3"/></g>
+      <path d="M50 34 L36 22 L46 26 L50 12 L54 26 L64 22 Z" fill="#867B18" stroke="#5a5210" stroke-width="1.5" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="s-letter" viewBox="0 0 100 70">
+      <rect x="4" y="4" width="92" height="62" rx="4" fill="#EDE6D4" stroke="#775537" stroke-width="2.5"/>
+      <path d="M4 8 L50 40 L96 8" fill="none" stroke="#775537" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M50 48 C44 44 40 40 41 36 C42 33 46 32 50 36 C54 32 58 33 59 36 C60 40 56 44 50 48 Z" fill="#8C2E3E"/>
+    </symbol>
+    <symbol id="s-flowers" viewBox="0 0 100 100">
+      <g stroke="#867B18" stroke-width="2" fill="none" stroke-linecap="round">
+        <path d="M50 98 C50 70 46 50 30 30"/><path d="M50 98 C52 66 58 48 72 26"/><path d="M50 98 C50 70 50 50 52 14"/><path d="M48 70 C40 62 28 58 18 52"/><path d="M52 64 C62 56 74 54 84 46"/>
+      </g>
+      <g fill="#f6cdd5" stroke="#d792a0" stroke-width="1">
+        <circle cx="30" cy="28" r="7"/><circle cx="22" cy="36" r="5"/><circle cx="72" cy="24" r="7"/><circle cx="80" cy="32" r="5"/><circle cx="52" cy="12" r="7"/>
+        <circle cx="18" cy="50" r="6"/><circle cx="84" cy="44" r="6"/><circle cx="40" cy="20" r="5"/><circle cx="62" cy="18" r="5"/>
+      </g>
+      <g fill="#fffdf6"><circle cx="30" cy="28" r="2.5"/><circle cx="72" cy="24" r="2.5"/><circle cx="52" cy="12" r="2.5"/></g>
+    </symbol>
+    <symbol id="s-moon" viewBox="0 0 100 100">
+      <path d="M62 8 C34 12 16 36 20 62 C24 84 46 98 70 94 C50 88 36 70 38 48 C40 28 52 14 62 8 Z" fill="url(#gold)" stroke="#a87a1f" stroke-width="2"/>
+      <path d="M78 20 L81 28 L89 31 L81 34 L78 42 L75 34 L67 31 L75 28 Z" fill="url(#gold)"/>
+    </symbol>
+    <symbol id="s-thumb" viewBox="0 0 100 92">
+      <g fill="none" stroke="#8C2E3E" stroke-width="2.6" stroke-linecap="round">
+        <path d="M50 88 C20 68 2 50 4 28 C6 10 22 2 34 4 C42 5 47 10 50 17 C53 10 58 5 66 4 C78 2 94 10 96 28 C98 50 80 68 50 88 Z"/>
+        <path d="M50 78 C26 62 12 48 14 30 C16 16 28 11 36 13 C43 14 47 19 50 25 C53 19 57 14 64 13 C72 11 84 16 86 30 C88 48 74 62 50 78"/>
+        <path d="M50 67 C32 55 22 45 24 32 C26 22 34 19 40 21 C45 22 48 26 50 31 C52 26 55 22 60 21 C66 19 74 22 76 32 C78 45 68 55 50 67"/>
+        <path d="M50 56 C38 48 32 41 34 34 C35 29 40 28 44 30 C47 31 49 34 50 37 C51 34 53 31 56 30 C60 28 65 29 66 34 C68 41 62 48 50 56"/>
+        <path d="M50 46 C45 42 42 39 43 36 M57 36 C58 39 55 42 50 46"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ INTRO ============ -->
+<div class="intro" id="intro">
+  <svg class="stk intro-stk i1" viewBox="0 0 100 80"><use href="#s-bowR"/></svg>
+  <svg class="stk intro-stk i2" viewBox="0 0 100 100"><use href="#s-star"/></svg>
+  <svg class="stk intro-stk i3" viewBox="0 0 100 100"><use href="#s-daisy"/></svg>
+  <div class="intro-inner">
+    <p class="intro-kicker">A love edition</p>
+    <h1 class="intro-logo" data-cfg="title">VOGUE</h1>
+    <p class="intro-sub"><span data-name="a"></span> &amp; <span data-name="b"></span> · <span data-cfg="months"></span> Months</p>
+    <button class="intro-btn" id="openBtn">Open the issue</button>
+  </div>
+</div>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <span class="tb-logo" data-cfg="title">VOGUE</span>
+  <span class="tb-issue"><span data-cfg="edition"></span> · <span data-cfg="issue"></span></span>
+  <div class="tb-actions">
+    <button class="icon-btn" id="contentsBtn" title="Contents" aria-label="Go to contents">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+    </button>
+    <button class="icon-btn" id="soundBtn" title="Page sound" aria-label="Toggle page sound">
+      <svg class="on" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg>
+      <svg class="off" viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M17 9l5 6M22 9l-5 6"/></svg>
+    </button>
+    <button class="icon-btn" id="fsBtn" title="Fullscreen" aria-label="Toggle fullscreen">
+      <svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ============ STAGE ============ -->
+<main class="stage">
+  <div class="book-frame" id="frame">
+    <div class="book-shift" id="shift">
+      <div class="book" id="book">
+
+<!-- ================================================================
+     00 · FRONT COVER
+     ================================================================ -->
+<div class="page p-cover" data-density="hard"><div class="pg" data-nofolio>
+  <figure class="ph bleed" data-img="1" style="--pos:center 30%"></figure>
+  <div class="cover-shade"></div>
+  <svg class="masthead" viewBox="0 0 1000 240" aria-label="Vogue"><text x="500" y="210" text-anchor="middle" textLength="940" lengthAdjust="spacingAndGlyphs" data-cfg="title">VOGUE</text></svg>
+  <div class="cover-dateline"><span data-cfg="issue"></span><span data-cfg="edition"></span><span>Priceless</span></div>
+
+  <div class="cl cl-left">
+    <p class="cl-kick">World exclusive</p>
+    <p class="cl-xl"><span data-cfg="months"></span><br>Months<br><em>of Us</em></p>
+    <p class="cl-s">The love story, told for the very first time</p>
+    <span class="cl-rule"></span>
+    <p class="cl-l">36 Questions</p>
+    <p class="cl-s">with the couple everyone’s talking about</p>
+  </div>
+  <div class="cl cl-right">
+    <p class="cl-l">The<br>Contract</p>
+    <p class="cl-s">(legally binding, unfortunately)</p>
+    <span class="cl-rule"></span>
+    <p class="cl-l"><em>Dylan Blue</em><br>on you</p>
+    <span class="cl-rule"></span>
+    <p class="cl-kick">Play</p>
+    <p class="cl-s">The crossword only we can solve</p>
+  </div>
+  <div class="cover-names">
+    <p class="cn-big"><span data-name="a"></span> <em>&amp;</em> <span data-name="b"></span></p>
+    <p class="cn-sub">“Still falling, every single day”</p>
+  </div>
+  <svg class="stk" viewBox="0 0 100 100" style="left:38%;top:31%;width:3.2em;--r:12deg"><use href="#s-sparkle"/></svg>
+  <span class="tag-stk" style="left:7%;bottom:15%;--r:-8deg">mine ♡</span>
+  <div class="barcode"><span></span><small>10 07 2026 · Nº 6</small></div>
+</div></div>
+
+<!-- ================================================================
+     01 · INSIDE COVER · DYLAN BLUE AD
+     ================================================================ -->
+<div class="page p-ad"><div class="pg" data-nofolio>
+  <figure class="ph ad-photo" data-img="2" style="--zoom:1.1"></figure>
+  <div class="ad-shade"></div>
+  <div class="ad-copy">
+    <p class="ad-name">Dylan Blue</p>
+    <p class="ad-pour">pour <span data-name="a"></span></p>
+    <p class="ad-notes">Top notes of rainy evenings · heart of Brew sandwiches · base of forever</p>
+  </div>
+  <p class="ad-tag">Advertisement</p>
+  <span class="tag-stk ad-note1" style="--r:-6deg">Fatima’s favourite smell ♡</span>
+  <span class="tag-stk ad-note2" style="--r:5deg">find him in any crowd</span>
+  <svg class="stk ad-heart" viewBox="0 0 100 92" style="--r:12deg"><use href="#s-heart"/></svg>
+  <p class="ad-foot">Best worn close. Available exclusively on him.</p>
+</div></div>
+
+<!-- ================================================================
+     02 · CONTENTS
+     ================================================================ -->
+<div class="page p-contents"><div class="pg">
+  <div class="ct-head">
+    <h2 class="ct-title">Contents</h2>
+    <p class="ct-issue"><span data-cfg="issue"></span><br><span data-cfg="edition"></span></p>
+  </div>
+  <div class="ct-body">
+    <div class="ct-left">
+      <figure class="ph arch" data-img="3"></figure>
+      <p class="ct-cap"><b>On the cover</b> <span data-name="a"></span> &amp; <span data-name="b"></span>, photographed on the best day of the month, every day of the month.</p>
+    </div>
+    <ol class="ct-list">
+      <li><a data-goto="4"><b>04</b><span>Letter from the Editor<i>Six months, one love letter</i></span></a></li>
+      <li><a data-goto="6"><b>06</b><span>By the Numbers<i>Our love, quantified</i></span></a></li>
+      <li><a data-goto="7"><b>07</b><span>The Cover Story<i><span data-cfg="months"></span> Months of Us</i></span></a></li>
+      <li><a data-goto="9"><b>09</b><span>Our Love Story<i>As told by Fatima</i></span></a></li>
+      <li><a data-goto="11"><b>11</b><span>The Road to Us<i>From August to forever</i></span></a></li>
+      <li><a data-goto="13"><b>13</b><span>Our Best Memories<i>The archive</i></span></a></li>
+      <li><a data-goto="14"><b>14</b><span>36 Questions<i>Rapid fire, no filter</i></span></a></li>
+      <li><a data-goto="15"><b>15</b><span>The Contract<i>Legally binding (in my heart)</i></span></a></li>
+      <li><a data-goto="17"><b>17</b><span>Beauty Secrets<i>Of a very happy couple</i></span></a></li>
+      <li><a data-goto="18"><b>18</b><span>The Bucket List<i>Before we’re old &amp; grey</i></span></a></li>
+      <li><a data-goto="19"><b>19</b><span>Play<i>Crossword, games &amp; Love-opoly</i></span></a></li>
+      <li><a data-goto="23"><b>23</b><span>The Soundtrack of Us<i>Press play</i></span></a></li>
+      <li><a data-goto="25"><b>25</b><span>Love Coupons<i>Redeem anytime</i></span></a></li>
+      <li><a data-goto="27"><b>27</b><span>A Fully Furnished Future<i>What’s next</i></span></a></li>
+    </ol>
+  </div>
+  <svg class="stk" viewBox="0 0 100 80" style="left:4%;top:15.5%;width:5em;--r:-14deg"><use href="#s-bowR"/></svg>
+</div></div>
+
+<!-- ================================================================
+     03 · MASTHEAD
+     ================================================================ -->
+<div class="page p-masthead"><div class="pg">
+  <svg class="mh-logo" viewBox="0 0 1000 240"><text x="500" y="210" text-anchor="middle" textLength="940" lengthAdjust="spacingAndGlyphs" data-cfg="title">VOGUE</text></svg>
+  <p class="mh-ed">The Anniversary Edition</p>
+  <div class="mh-cols">
+    <div>
+      <p class="mh-role">Editor in Chief</p><p class="mh-name" data-name="b"></p>
+      <p class="mh-role">Creative Director</p><p class="mh-name" data-name="a"></p>
+      <p class="mh-role">Head of Cuddles</p><p class="mh-name" data-name="a"></p>
+      <p class="mh-role">Director of Snacks</p><p class="mh-name" data-name="b"></p>
+      <p class="mh-role">Chief Photographer</p><p class="mh-name">The front camera</p>
+    </div>
+    <div>
+      <p class="mh-role">Senior Manager, Inside Jokes</p><p class="mh-name">Both of us</p>
+      <p class="mh-role">Fashion Editor</p><p class="mh-name">Us</p>
+      <p class="mh-role">Travel Desk</p><p class="mh-name" data-name="a"></p>
+      <p class="mh-role">Playlist Curator</p><p class="mh-name" data-name="b"></p>
+      <p class="mh-role">5PM Talks Desk</p><p class="mh-name">Both of us</p>
+    </div>
+    <div>
+      <p class="mh-role">Contributing Editors</p><p class="mh-name">Just us &amp; the waiter from Brew</p>
+      <p class="mh-role">Research</p><p class="mh-name">Six months of pictures &amp; memories</p>
+      <p class="mh-role">Copy Chief</p><p class="mh-name">Autocorrect (fired)</p>
+      <p class="mh-role">Founded</p><p class="mh-name" data-cfg="togetherPretty"></p>
+    </div>
+  </div>
+  <div class="mh-pub">
+    <p class="mh-role">Published in</p>
+    <p class="mh-places"><span data-name="b"></span>’s room</p>
+    <p class="mh-role">Subscriptions</p>
+    <p class="mh-places">Lifetime only. Non-refundable. Auto-renews every morning.</p>
+    <p class="mh-role">Letters to the editor</p>
+    <p class="mh-places">Deliver by hand, preferably with a peach iced tea.</p>
+  </div>
+  <p class="mh-fine">VOGUE, The Anniversary Edition, is published every six months, with love, by two people who still can’t believe their luck. Printed on the softest paper, bound with forever. No part of this publication may be reproduced without a kiss. All rights reserved, especially the right to keep loving you.</p>
+  <svg class="stk" viewBox="0 0 100 100" style="left:6%;bottom:12%;width:4.4em;--r:-10deg"><use href="#s-daisy"/></svg>
+  <svg class="stk" viewBox="0 0 100 100" style="right:7%;top:4%;width:3em;--r:10deg"><use href="#s-sparkle"/></svg>
+</div></div>
+
+<!-- ================================================================
+     04 · EDITOR'S LETTER
+     ================================================================ -->
+<div class="page p-letter"><div class="pg">
+  <p class="kicker">Editor’s Letter</p>
+  <h2 class="el-title">Six Months In, and Already My Favourite Story</h2>
+  <figure class="ph el-photo" data-img="4"></figure>
+  <span class="washi g" style="right:9%;top:8.4%;width:7em;--r:6deg"></span>
+  <p class="el-cap">The editor, photographed by the other half.</p>
+  <div class="el-text">
+    <p class="dropcap">Every issue starts with a blank page, and so did we. Six months ago I had no idea that one ordinary Tuesday would quietly become the first page of the best thing that ever happened to me.</p>
+    <p>Since then we’ve collected a ridiculous amount of material: 5pm conversations, terrible jokes that only we understand, rainy days, Brew sandwiches, arguments about nothing and the kind of quiet moments that feel like home.</p>
+    <p>This issue is my attempt to put all of it in one place. It’s part scrapbook, part love letter, part proof that you are, without question, the best-dressed, funniest and kindest person I know (with the best dimples, obviously).</p>
+    <p>Inside you’ll find our story told twice (both times by me, obviously), a timeline of every first, a contract you’ve already signed, a crossword only you can solve, and a few secrets we probably shouldn’t have printed.</p>
+    <p>Turn the pages slowly. Play the games. Laugh at us. And know that every word in here means the same thing: I would choose you again, every single time.</p>
+  </div>
+  <p class="el-sign">With all my love, <span data-name="b"></span></p>
+  <svg class="stk" viewBox="0 0 100 92" style="right:6%;bottom:9.5%;width:2.6em;--r:14deg"><use href="#s-heart"/></svg>
+</div></div>
+
+<!-- ================================================================
+     05 · CONTRIBUTORS
+     ================================================================ -->
+<div class="page p-contrib"><div class="pg">
+  <p class="kicker">Contributors</p>
+  <h2 class="co-title">The people<br><em>behind the issue</em></h2>
+  <div class="co-person">
+    <div class="co-photo"><figure class="ph" data-img="5"></figure><span class="washi n" style="left:20%;top:-6%;width:60%;--r:-4deg"></span></div>
+    <div>
+      <p class="co-name" data-name="a"></p>
+      <p class="co-bio">is the reason this magazine exists. Expert in making ordinary Tuesdays feel like holidays. Owner of the best dimples in the world (independently verified).</p>
+      <p class="co-q"><b>Favourite memory from the shoot?</b> “All of them. Next question.”</p>
+    </div>
+  </div>
+  <div class="co-person co-rev">
+    <div class="co-photo"><figure class="ph" data-img="6"></figure><span class="washi b" style="left:20%;top:-6%;width:60%;--r:5deg"></span></div>
+    <div>
+      <p class="co-name" data-name="b"></p>
+      <p class="co-bio">wrote, designed and over-thought every page of this issue. Professional admirer. Has been staring at the person on the left for two years and counting.</p>
+      <p class="co-q"><b>What’s next?</b> “Volume two. And three. And all the rest.”</p>
+    </div>
+  </div>
+  <p class="co-also"><b>Also contributing:</b> rain, Brew sandwiches, sage kievs, the group chat, every song we’ve ever screamed in the car, and a small army of unflattering selfies.</p>
+  <svg class="stk" viewBox="0 0 100 100" style="right:6%;top:5%;width:3.8em;--r:12deg"><use href="#s-smiley"/></svg>
+</div></div>
+
+<!-- ================================================================
+     06 · BY THE NUMBERS
+     ================================================================ -->
+<div class="page p-numbers"><div class="pg">
+  <p class="kicker">Up Front</p>
+  <h2 class="nu-title">By the <em>Numbers</em></h2>
+  <p class="nu-dek">Our love, carefully quantified by our in-house research department (us, at 1am).</p>
+  <figure class="ph nu-photo" data-img="7"></figure>
+  <div class="nu-grid">
+    <div class="nu-item nu-hero"><b id="nuDays">182</b><span>days together</span></div>
+    <div class="nu-item"><b id="nuHours">4,368</b><span>hours of us</span></div>
+    <div class="nu-item"><b><span data-cfg="monthsNum"></span></b><span>months of us</span></div>
+    <div class="nu-item"><b>∞</b><span>inside jokes</span></div>
+    <div class="nu-item"><b>20+</b><span>cups of peach iced tea</span></div>
+    <div class="nu-item"><b>5PM</b><span>our favourite time to talk</span></div>
+    <div class="nu-item"><b>1</b><span>person I’d pick again</span></div>
+  </div>
+  <p class="nu-live">And counting… <span id="nuLive"></span></p>
+  <span class="tag-stk" style="right:7%;top:30%;--r:8deg">cutsie</span>
+  <svg class="stk" viewBox="0 0 100 100" style="left:8%;top:30%;width:3em;--r:-8deg"><use href="#s-star"/></svg>
+</div></div>
+
+<!-- ================================================================
+     07 · COVER STORY (photo)
+     ================================================================ -->
+<div class="page p-cs-photo"><div class="pg" data-nofolio>
+  <figure class="ph bleed" data-img="8"></figure>
+  <svg class="stk" viewBox="0 0 100 92" style="right:7%;top:5%;width:3.4em;--r:-12deg"><use href="#s-heart"/></svg>
+  <p class="cs-credit">Photographed by the people who love us most · Styled by whatever was clean</p>
+</div></div>
+
+<!-- ================================================================
+     08 · COVER STORY (opener)
+     ================================================================ -->
+<div class="page p-cs"><div class="pg">
+  <p class="kicker">The Cover Story</p>
+  <h2 class="cs-title"><span data-cfg="months"></span> Months<br>of <em>Us</em></h2>
+  <svg class="doodle-line" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 12 C40 4 70 18 104 9 C134 2 160 16 197 7"/></svg>
+  <p class="cs-dek">Two people, one very long conversation, and a love that only gets better with time. Inside the romance of the year, and it’s only getting started.</p>
+  <p class="cs-by">By <span data-name="b"></span> · Photographed by our phones</p>
+  <div class="cs-body">
+    <p class="dropcap">It started, as the best things do, without either of us noticing. A conversation that went on a little too long. A laugh that came a little too easily. Then, somewhere between the first hello and the hundredth goodnight, it became obvious: this was it.</p>
+    <blockquote class="pull">“Somewhere between the first hello and the hundredth goodnight, it became obvious.”</blockquote>
+    <p>Six months later, the conversation hasn’t stopped. It has moved through two seasons, through bad days and the very best ones. We’ve learned each other’s food orders, silences and secret playlists. And still, every evening at 5pm, there’s something new to talk about.</p>
+    <p>That, it turns out, is the whole secret. Not grand gestures (although those are nice too) but choosing each other in the tiny moments, over and over, until six months feels like six minutes.</p>
+  </div>
+  <p class="doodle-note">p.s. you look really cute reading this</p>
+  <svg class="stk" viewBox="0 0 100 100" style="right:8%;bottom:8%;width:4em;--r:10deg"><use href="#s-cherry"/></svg>
+  <svg class="stk" viewBox="0 0 100 100" style="right:22%;bottom:16%;width:2.2em;--r:0deg"><use href="#s-sparkle"/></svg>
+</div></div>
+
+<!-- ================================================================
+     09 · OUR LOVE STORY · PART I
+     ================================================================ -->
+<div class="page p-story p-story-a"><div class="pg">
+  <p class="kicker">Features</p>
+  <h2 class="st-title">Our Love <em>Story</em></h2>
+  <p class="st-part">Part I · As told by <span data-name="b"></span></p>
+  <figure class="ph st-photo" data-img="9"></figure>
+  <div class="st-text">
+    <p class="dropcap">From the very beginning, there was something I couldn’t quite explain. Being around you felt easy, warm and completely new, like finding a song I already knew all the words to.</p>
+    <p>I remember the little things most: the first time you laughed at one of my terrible jokes, the way you said my name, how quickly “see you later” turned into “see you tonight”.</p>
+    <p>You taught me patience, laughter and the beauty of growing together. You make ordinary days feel like something worth writing down.</p>
+    <p>Today, I choose you with a full heart, grateful for a love that feels gentle, steady and true, and excited for every chapter we haven’t written yet.</p>
+  </div>
+  <svg class="stk" viewBox="0 0 100 80" style="right:4%;top:27%;width:4.6em;--r:16deg"><use href="#s-bow"/></svg>
+</div></div>
+
+<!-- ================================================================
+     10 · OUR LOVE STORY · PART II
+     ================================================================ -->
+<div class="page p-story p-story-b"><div class="pg">
+  <p class="st-part">Part II · As told by <span data-name="b"></span></p>
+  <blockquote class="st-quote">“Some people arrive quietly and end up changing everything.”</blockquote>
+  <div class="st-text cols2">
+    <p class="dropcap">You brought warmth and meaning into moments I never noticed before. With you, love became something deeper than words, built on understanding, respect and endless support.</p>
+    <p>You make the boring parts exciting and the hard parts bearable. You are my favourite person to do nothing with.</p>
+    <p>Today, I choose you, proud to walk beside the person who makes my world feel complete.</p>
+  </div>
+  <figure class="ph st-photo2" data-img="10"></figure>
+  <svg class="stk" viewBox="0 0 100 80" style="right:6%;top:46%;width:4.6em;--r:-10deg"><use href="#s-butterfly"/></svg>
+</div></div>
+
+<!-- ================================================================
+     11 · THE ROAD TO US (timeline left)
+     ================================================================ -->
+<div class="page p-road"><div class="pg">
+  <svg class="road" viewBox="0 0 300 400" preserveAspectRatio="none" aria-hidden="true">
+    <path class="road-base" d="M 18 132 C 120 120, 285 110, 262 178 C 240 240, 50 205, 52 268 C 54 335, 200 300, 320 300"/>
+    <path class="road-line" d="M 18 132 C 120 120, 285 110, 262 178 C 240 240, 50 205, 52 268 C 54 335, 200 300, 320 300"/>
+  </svg>
+  <div class="road-head">
+    <p class="kicker light">Features</p>
+    <h2 class="rd-title">The Road</h2>
+    <p class="rd-script">to Us</p>
+  </div>
+  <div class="pin" style="left:6%;top:33%"></div>
+  <div class="milestone" style="left:10%;top:36%"><b>August 2024</b><i>The first hello</i></div>
+  <div class="pin" style="left:87.3%;top:44.5%"></div>
+  <div class="milestone right" style="right:4%;top:47%"><b>2024 to 2026</b><i>Rain, Brew sandwiches &amp; sage kievs</i></div>
+  <div class="pin" style="left:17.3%;top:67%"></div>
+  <div class="milestone" style="left:23%;top:61%"><b>April 7, 2026</b><i>Our first date, at Funghi</i></div>
+  <figure class="ph polaroid" data-img="11" style="left:52%;top:57%;--r:5deg"></figure>
+  <figure class="ph polaroid" data-img="12" style="left:6%;top:73%;--r:-6deg"></figure>
+  <svg class="stk" viewBox="0 0 100 100" style="left:78%;top:11%;width:3.4em;--r:12deg"><use href="#s-star"/></svg>
+  <svg class="stk" viewBox="0 0 100 100" style="left:67%;top:26%;width:2em"><use href="#s-sparkle"/></svg>
+  <svg class="stk" viewBox="0 0 100 92" style="left:84%;top:86%;width:2.6em;--r:-14deg"><use href="#s-heart"/></svg>
+</div></div>
+
+<!-- ================================================================
+     12 · THE ROAD TO US (timeline right)
+     ================================================================ -->
+<div class="page p-road p-road-b"><div class="pg">
+  <svg class="road" viewBox="0 0 300 400" preserveAspectRatio="none" aria-hidden="true">
+    <path class="road-base" d="M -20 300 C 90 300, 140 362, 230 342 C 300 326, 292 250, 222 236 C 120 216, 58 172, 118 128"/>
+    <path class="road-line" d="M -20 300 C 90 300, 140 362, 230 342 C 300 326, 292 250, 222 236 C 120 216, 58 172, 118 128"/>
+  </svg>
+  <p class="rd-script top">&amp; counting…</p>
+  <div class="pin" style="left:76.7%;top:85.5%"></div>
+  <div class="milestone right" style="right:28%;top:87%"><b>April 7, 2026</b><i>Officially us. One ordinary Tuesday changed everything.</i></div>
+  <div class="pin" style="left:74%;top:59%"></div>
+  <div class="milestone right" style="right:2%;top:62%"><b>Summer 2026</b><i>Peach iced teas &amp; 5pm talks</i></div>
+  <div class="pin big" style="left:39.3%;top:32%"></div>
+  <div class="milestone" style="left:46%;top:26%"><b>October 7, 2026</b><i>Six months &amp; still falling</i></div>
+  <figure class="ph polaroid" data-img="13" style="left:6%;top:38%;--r:-4deg"></figure>
+  <figure class="ph polaroid" data-img="14" style="left:58%;top:5%;--r:6deg"></figure>
+  <svg class="stk" viewBox="0 0 100 100" style="left:44%;top:14%;width:2.8em;--r:-10deg"><use href="#s-moon"/></svg>
+  <svg class="stk" viewBox="0 0 100 100" style="left:26%;top:90%;width:2.4em"><use href="#s-sparkle"/></svg>
+</div></div>
+
+<!-- ================================================================
+     13 · OUR BEST MEMORIES (collage)
+     ================================================================ -->
+<div class="page p-memories"><div class="pg">
+  <h2 class="me-title">Our Best<br>Memories</h2>
+  <p class="me-dek">a collection of the moments that made us laugh, cry, and fall a little harder. handle with care.</p>
+  <figure class="ph snap s1" data-img="15" style="--r:4deg"><figcaption>the first time u put ur head on my shoulder</figcaption></figure>
+  <figure class="ph snap s2" data-img="16" style="--r:-5deg"><figcaption>funghi date!!</figcaption></figure>
+  <figure class="ph snap s3" data-img="17" style="--r:3deg"><figcaption>brew run</figcaption></figure>
+  <figure class="ph snap s4" data-img="18" style="--r:-3deg"><figcaption>us, obviously</figcaption></figure>
+  <figure class="ph snap s5" data-img="19" style="--r:6deg"><figcaption>that one day</figcaption></figure>
+  <figure class="ph snap s6" data-img="20" style="--r:-4deg"><figcaption>forever favourite</figcaption></figure>
+  <span class="washi g t1" style="--r:-8deg"></span>
+  <span class="washi n t2" style="--r:10deg"></span>
+  <span class="washi b t3" style="--r:4deg"></span>
+  <span class="washi r t4" style="--r:-12deg"></span>
+  <svg class="stk m1" viewBox="0 0 100 80" style="--r:-16deg"><use href="#s-bowR"/></svg>
+  <svg class="stk m2" viewBox="0 0 100 100" style="--r:12deg"><use href="#s-cherry"/></svg>
+  <svg class="stk m3" viewBox="0 0 100 100"><use href="#s-star"/></svg>
+</div></div>
+
+<!-- ================================================================
+     14 · 36 QUESTIONS
+     ================================================================ -->
+<div class="page p-questions"><div class="pg">
+  <figure class="ph q-photo" data-img="21" style="--zoom:1.26"></figure>
+  <div class="q-head">
+    <p class="q-num">36</p>
+    <div><h2 class="q-title">Questions</h2><p class="q-sub">with <span data-name="a"></span> &amp; <span data-name="b"></span></p></div>
+  </div>
+  <div class="q-grid">
+    <p><b>1. Who said “I love you” first?</b> ziyad hehe</p>
+    <p><b>2. Best date ever?</b> FUNGHIIII</p>
+    <p><b>3. Song that reminds you of us?</b> Every song, honestly.</p>
+    <p><b>4. Who’s the better cook?</b> Banana Bread Queen hehe</p>
+    <p><b>5. Biggest pet peeve?</b> Blanket theft.</p>
+    <p><b>6. Dream destination?</b> Anywhere, together (Turkey)</p>
+    <p><b>7. Most-used emoji?</b> The crying one</p>
+    <p><b>8. Who apologises first?</b> us loll</p>
+    <p><b>9. Morning person?</b> Him yes, ME NO</p>
+    <p><b>10. Your love language?</b> Food. and the one kiss.</p>
+    <p><b>11. One word for us?</b> Home.</p>
+    <p><b>12. Favourite thing about the other?</b> Too long to print.</p>
+    <p><b>13. Where do you see us in ten years?</b> cutsie house, with Mihrimah InshAllah</p>
+    <p><b>14. Most romantic moment?</b> The one kiss hehe</p>
+    <p><b>15. Who’s the bigger flirt?</b> us hehe</p>
+    <p><b>16. Favourite smell?</b> DYLAN BLUE ON U</p>
+    <p><b>17. Who said sorry last?</b> Nobody remembers. Good sign.</p>
+    <p><b>18. Last words?</b> I’d do it all again.</p>
+  </div>
+  <p class="q-off">The other 18 answers are strictly off the record.</p>
+  <span class="tag-stk" style="right:6%;top:26%;--r:7deg">fafa</span>
+  <svg class="stk" viewBox="0 0 100 100" style="right:6%;bottom:4.5%;width:3em;--r:-12deg"><use href="#s-strawberry"/></svg>
+</div></div>
+
+<!-- ================================================================
+     15 · THE CONTRACT (part one)
+     ================================================================ -->
+<div class="page p-contract"><div class="pg">
+  <span class="washi g" style="left:-3%;top:2%;width:9em;--r:-35deg"></span>
+  <svg class="stk" viewBox="0 0 100 80" style="right:3%;top:1.5%;width:6.4em;--r:8deg"><use href="#s-bow"/></svg>
+  <h2 class="kt-h1">Lifetime Ownership Agreement</h2>
+  <p class="k-sub">(legally binding in my heart unfortunately)</p>
+  <p class="k-parties"><b>Party A</b> <span data-name="b"></span> &nbsp;·&nbsp; <b>Party B</b> <span data-name="a"></span></p>
+  <p class="k-p">This contract confirms that Party B hereby agrees to become the exclusive emotional property of Party A for the rest of time, or until the universe explodes, whichever comes first.</p>
+  <p class="k-p">By signing this agreement, Party B accepts the following terms:</p>
+  <ul class="k-list">
+    <li>You will allow me to annoy you daily in the name of affection. (includes maar)</li>
+    <li>Your hands are now legally obligated to find mine in crowded places and rainy streets. (will be applicable later unfortunately :( )</li>
+    <li>You must let me steal your attention, your muskle, and occasionally your fries from TBC.</li>
+    <li>Every rainy day from now on belongs a little to us.</li>
+    <li>You are required to remember that one ordinary Tuesday changed everything for us.</li>
+    <li>You will continue making me feel loved in tiny ways that probably don’t seem important to you but mean everything to me.</li>
+    <li>Miniso is ours and ours only.</li>
+  </ul>
+  <svg class="stk" viewBox="0 0 100 100" style="right:8%;bottom:6%;width:3.6em;--r:-14deg"><use href="#s-star"/></svg>
+  <svg class="stk" viewBox="0 0 100 100" style="right:20%;bottom:12%;width:2em;--r:10deg"><use href="#s-sparkle"/></svg>
+</div></div>
+
+<!-- ================================================================
+     16 · THE CONTRACT (part two)
+     ================================================================ -->
+<div class="page p-contract p-contract-b"><div class="pg">
+  <p class="k-p">Party A additionally reserves the right to:</p>
+  <ul class="k-list">
+    <li>stare at you fondly,</li>
+    <li>miss you dramatically,</li>
+    <li>poke ur muskle and dimples</li>
+    <li>hit u on ur legs in public (sorry not sorry hehhheh)</li>
+    <li>unlimited stories</li>
+    <li>gudgudi in indrives</li>
+  </ul>
+  <div class="k-witness">
+    <figure><div class="ph" data-img="22"></div><figcaption>Party B’s witness</figcaption></figure>
+    <figure><div class="ph" data-img="23"></div><figcaption>Party A’s witness</figcaption></figure>
+  </div>
+  <p class="k-p">The term “boyfriend” will not be used because we are classy and cringe-free. However, “mine”, “cutsie”, “fafa” are fully acceptable.</p>
+  <p class="k-p">By agreeing to this contract, Party B confirms that he understands he is now emotionally attached to Party A permanently and with zero possibility of escape.</p>
+  <div class="k-sign">
+    <div><p class="k-p">Signed,</p><p class="k-sig" data-name="b"></p><p class="k-for">yours forever♡</p></div>
+    <div class="k-thumb"><svg viewBox="0 0 100 92"><use href="#s-thumb"/></svg><p class="k-for">ThumbPrints</p></div>
+    <div><p class="k-p">Signed,</p><p class="k-sig" data-name="a"></p><p class="k-for">mine forever♡</p></div>
+  </div>
+  <figure class="ph k-bueno" data-img="24"></figure>
+  <span class="k-bueno-cap">(emotional support)</span>
+  <svg class="stk" viewBox="0 0 100 100" style="left:2%;bottom:3%;width:5em;--r:-8deg"><use href="#s-flowers"/></svg>
+  <svg class="stk" viewBox="0 0 100 100" style="right:30%;bottom:3%;width:3.4em;--r:10deg"><use href="#s-daisy"/></svg>
+  <svg class="stk" viewBox="0 0 100 100" style="right:6%;top:4%;width:3.4em;--r:12deg"><use href="#s-star"/></svg>
+  <span class="washi g" style="right:-3%;bottom:2%;width:9em;--r:-35deg"></span>
+</div></div>
+
+<!-- ================================================================
+     17 · BEAUTY SECRETS
+     ================================================================ -->
+<div class="page p-beauty"><div class="pg">
+  <p class="kicker">Beauty</p>
+  <h2 class="be-title">Beauty <em>Secrets</em></h2>
+  <p class="be-sub">of a very happy couple</p>
+  <div class="be-grid">
+    <div><b>1</b><p>Confidence fixes almost everything. Telling each other “you look amazing” fixes the rest.</p></div>
+    <div><b>2</b><p>The best glow comes from laughing until your stomach hurts.</p></div>
+    <div><b>3</b><p>Eight hours of sleep, preferably after a 5pm talk that ran very late.</p></div>
+    <div><b>4</b><p>Never underestimate the power of a Dylan Blue spritz.</p></div>
+    <figure class="ph be-photo" data-img="25"></figure>
+    <div><b>5</b><p>Hydrate (peach iced tea counts). Moisturise. Forehead kisses. Repeat.</p></div>
+    <div><b>6</b><p>A heart at rest is the best anti-ageing cream there is.</p></div>
+  </div>
+  <svg class="stk" viewBox="0 0 100 100" style="right:7%;top:4.5%;width:4em;--r:14deg"><use href="#s-daisy"/></svg>
+  <svg class="stk" viewBox="0 0 100 100" style="right:20%;top:12%;width:2em"><use href="#s-sparkle"/></svg>
+</div></div>
+
+<!-- ================================================================
+     18 · BUCKET LIST
+     ================================================================ -->
+<div class="page p-bucket"><div class="pg">
+  <h2 class="bk-title">Bucket<br>List</h2>
+  <figure class="ph bk-photo" data-img="26"></figure>
+  <span class="washi r" style="right:15%;top:2.4%;width:6em;--r:-6deg"></span>
+  <p class="bk-note">things to do before we’re old &amp; grey (and after, too)</p>
+  <ul class="bk-list no-flip" id="bucketList"></ul>
+  <p class="bk-count" id="bucketCount"></p>
+  <svg class="stk" viewBox="0 0 100 100" style="right:7%;bottom:5%;width:3.4em;--r:-10deg"><use href="#s-strawberry"/></svg>
+  <svg class="stk" viewBox="0 0 100 100" style="right:19%;bottom:9%;width:2.4em;--r:12deg"><use href="#s-star"/></svg>
+</div></div>
+
+<!-- ================================================================
+     19 · CROSSWORD
+     ================================================================ -->
+<div class="page p-cross"><div class="pg">
+  <h2 class="cw-title"><span>How well do you</span> know us?</h2>
+  <svg class="stk" viewBox="0 0 100 100" style="right:6%;top:3%;width:3.6em;--r:12deg"><use href="#s-star"/></svg>
+  <svg class="stk" viewBox="0 0 100 92" style="right:17%;top:9%;width:2.2em;--r:-10deg"><use href="#s-heart"/></svg>
+  <div class="cw-wrap no-flip">
+    <div class="cw-grid" id="cwGrid"></div>
+  </div>
+  <div class="cw-clues no-flip">
+    <div><p class="cw-h">Across</p><ol id="cwAcross"></ol></div>
+    <div><p class="cw-h">Down</p><ol id="cwDown"></ol></div>
+    <div class="cw-btns">
+      <button data-cw="check">Check</button>
+      <button data-cw="reveal">Reveal</button>
+      <button data-cw="clear">Clear</button>
+    </div>
+    <p class="cw-msg" id="cwMsg"></p>
+  </div>
+</div></div>
+
+<!-- ================================================================
+     20 · WHO'S MORE LIKELY TO
+     ================================================================ -->
+<div class="page p-likely"><div class="pg">
+  <p class="kicker light">Play</p>
+  <h2 class="lt-title">Who’s More<br><em>Likely To…</em></h2>
+  <div class="lt-game no-flip" id="likely">
+    <p class="lt-progress" id="ltProgress"></p>
+    <div class="lt-card"><p id="ltPrompt"></p></div>
+    <div class="lt-choices">
+      <button data-pick="a"><span data-name="a"></span></button>
+      <button data-pick="b"><span data-name="b"></span></button>
+    </div>
+    <div class="lt-result" id="ltResult" hidden>
+      <div class="lt-bars">
+        <div><span data-name="a"></span><i id="ltBarA"></i><b id="ltScoreA">0</b></div>
+        <div><span data-name="b"></span><i id="ltBarB"></i><b id="ltScoreB">0</b></div>
+      </div>
+      <p id="ltVerdict"></p>
+      <button class="lt-again" id="ltAgain">Play again</button>
+    </div>
+  </div>
+  <p class="lt-how">read it out loud. point at each other. tap the winner.</p>
+  <svg class="stk" viewBox="0 0 100 100" style="right:7%;top:4%;width:4em;--r:12deg"><use href="#s-smiley"/></svg>
+</div></div>
+
+<!-- ================================================================
+     21 · LOVE-OPOLY
+     ================================================================ -->
+<div class="page p-board"><div class="pg">
+  <div class="board" id="board">
+    <div class="board-center">
+      <h2 class="bd-title">LOVE<span>♥︎</span>OPOLY</h2>
+      <p class="bd-sub">the <span data-name="a"></span> &amp; <span data-name="b"></span> edition</p>
+      <figure class="ph bd-photo" data-img="27"></figure>
+      <div class="bd-play">
+        <button class="die" id="die" aria-label="Roll the die"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></button>
+        <p class="bd-msg" id="bdMsg"><b>Roll the die</b> Land on a square, do what it says.</p>
+      </div>
+    </div>
+    <span class="token" id="token">♥︎</span>
+  </div>
+</div></div>
+
+<!-- ================================================================
+     22 · SURVIVAL KIT
+     ================================================================ -->
+<div class="page p-kit"><div class="pg">
+  <h2 class="kt-title">The Love<br>Survival Kit</h2>
+  <figure class="ph kt-photo" data-img="28"></figure>
+  <p class="kt-h">Essentials, tried &amp; tested</p>
+  <ul class="kt-list">
+    <li><b>An Oversized Hoodie</b><i>ideally stolen from the other</i></li>
+    <li><b>Emergency Kinder Bueno</b><i>for moods of all sizes</i></li>
+    <li><b>Our Screenshot Folder</b><i>for receipts, memes &amp; evidence</i></li>
+    <li><b>A Playlist of Bops</b><i>long drives require it</i></li>
+    <li><b>Peach Iced Tea</b><i>hydration is romance</i></li>
+    <li><b>A Spritz of Dylan Blue</b><i>so I can find you in a crowd</i></li>
+    <li><b>That One Inside Joke</b><i>the only thing we always laugh at</i></li>
+  </ul>
+  <svg class="stk" viewBox="0 0 100 70" style="left:5%;top:30%;width:4.4em;--r:-12deg"><use href="#s-letter"/></svg>
+  <svg class="stk" viewBox="0 0 100 92" style="right:6%;top:31%;width:2.8em;--r:12deg"><use href="#s-heart"/></svg>
+</div></div>
+
+<!-- ================================================================
+     23 · THE SOUNDTRACK OF US
+     ================================================================ -->
+<div class="page p-music"><div class="pg">
+  <p class="kicker light">Culture</p>
+  <h2 class="mu-title">The Soundtrack<br><em>of Us</em></h2>
+  <button class="vinyl no-flip" id="vinyl" aria-label="Play our song">
+    <span class="vinyl-disc"><figure class="ph vinyl-label" data-img="29"></figure></span>
+  </button>
+  <div class="mu-sides">
+    <ol class="mu-list">
+      <li class="side">Side A</li>
+      <li class="now"><b>A1</b> <span data-song="title"></span> <i>· <span data-song="artist"></span>, our song</i></li>
+      <li><b>A2</b> The kitchen-dance song <i>· 2am, socks on</i></li>
+      <li><b>A3</b> That road-trip anthem <i>· windows down</i></li>
+      <li><b>A4</b> The one that made us cry <i>· don’t skip</i></li>
+    </ol>
+    <ol class="mu-list">
+      <li class="side">Side B</li>
+      <li><b>B1</b> Our slow dance <i>· forever on repeat</i></li>
+      <li><b>B2</b> The guilty pleasure <i>· we know all the words</i></li>
+      <li><b>B3</b> The rainy-day one <i>· peach iced tea in hand</i></li>
+      <li><b>B4</b> Your song <i>· you know which one</i></li>
+    </ol>
+  </div>
+  <p class="mu-tap" id="muTap">tap the record to play our song</p>
+  <span class="tag-stk" style="right:6%;top:5%;--r:8deg">on repeat</span>
+  <svg class="stk" viewBox="0 0 100 100" style="right:24%;top:13%;width:2.2em"><use href="#s-sparkle"/></svg>
+</div></div>
+
+<!-- ================================================================
+     24 · LOVE LETTER (red string)
+     ================================================================ -->
+<div class="page p-string"><div class="pg">
+  <svg class="string" viewBox="0 0 300 400" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M 40 -5 C 80 40, 10 70, 70 95 C 150 130, 200 60, 230 110 C 270 175, 120 160, 150 205 C 175 245, 260 205, 250 255 C 238 300, 120 280, 80 320 C 50 350, 120 380, 100 410"/>
+    <path d="M 160 -5 C 170 30, 250 20, 240 60 C 230 90, 280 100, 305 90" class="thin"/>
+  </svg>
+  <svg class="star s1" viewBox="0 0 100 100"><path d="M50 4 L61 38 L97 38 L68 59 L79 94 L50 72 L21 94 L32 59 L3 38 L39 38 Z"/></svg>
+  <svg class="star s2" viewBox="0 0 100 100"><path d="M50 4 L61 38 L97 38 L68 59 L79 94 L50 72 L21 94 L32 59 L3 38 L39 38 Z"/></svg>
+  <svg class="star s3" viewBox="0 0 100 100"><path d="M50 4 L61 38 L97 38 L68 59 L79 94 L50 72 L21 94 L32 59 L3 38 L39 38 Z"/></svg>
+  <svg class="star s4 outline" viewBox="0 0 100 100"><path d="M50 2 L56 44 L98 50 L56 56 L50 98 L44 56 L2 50 L44 44 Z"/></svg>
+  <svg class="scribble-heart" viewBox="0 0 100 92"><path d="M50 88 C 22 68, 4 50, 6 28 C 8 10, 30 4, 42 16 C 47 21, 49 26, 50 30 C 52 22, 58 10, 72 8 C 90 6, 98 24, 92 42 C 86 60, 66 74, 50 88 Z M52 84 C 30 66, 10 48, 12 30"/></svg>
+  <figure class="ph oval o1" data-img="30"></figure>
+  <figure class="ph oval o2" data-img="31"></figure>
+  <p class="hw hw1">i’m gonna do this right,<br>and show you i’m not going anywhere</p>
+  <p class="hw hw2"><mark>i love you</mark> means<br>you’re never, ever,<br>ever alone</p>
+  <p class="hw hw3">you’ll learn what i already know</p>
+  <p class="initials"><span data-initial="a"></span> + <span data-initial="b"></span></p>
+  <svg class="stk" viewBox="0 0 100 100" style="left:4%;bottom:2%;width:4.4em;--r:6deg"><use href="#s-flowers"/></svg>
+</div></div>
+
+<!-- ================================================================
+     25 · LOVE COUPONS
+     ================================================================ -->
+<div class="page p-coupons"><div class="pg">
+  <p class="kicker">Gifts</p>
+  <h2 class="cp-title">Love <em>Coupons</em></h2>
+  <p class="cp-dek">Cut along the dotted line. Tap to redeem. No expiry date, no fine print.</p>
+  <div class="cp-grid no-flip" id="coupons"></div>
+  <svg class="stk" viewBox="0 0 100 80" style="right:5%;top:3.5%;width:5em;--r:12deg"><use href="#s-bowR"/></svg>
+  <svg class="stk" viewBox="0 0 100 92" style="left:44%;bottom:5%;width:2.6em;--r:-8deg"><use href="#s-heart"/></svg>
+</div></div>
+
+<!-- ================================================================
+     26 · TRAVEL · POSTCARDS
+     ================================================================ -->
+<div class="page p-travel"><div class="pg">
+  <p class="kicker">Travel</p>
+  <h2 class="tr-title">Wish You<br>Were <em>Here</em></h2>
+  <p class="tr-dek">Places we’ve loved, and loved each other in.</p>
+  <div class="postcard pc1" style="--r:-4deg">
+    <figure class="ph" data-img="32" style="--zoom:1.12"></figure>
+    <div class="pc-back"><span class="stamp">♥︎</span><p class="pc-hw">the best view<br>was you.</p><p class="pc-place">Funghi · April 2026</p></div>
+  </div>
+  <div class="postcard pc2" style="--r:3deg">
+    <figure class="ph" data-img="33"></figure>
+    <div class="pc-back"><span class="stamp">♥︎</span><p class="pc-hw">same table,<br>same order, same us.</p><p class="pc-place">Brew · every week</p></div>
+  </div>
+  <div class="postcard pc3" style="--r:-2deg">
+    <figure class="ph" data-img="34"></figure>
+    <div class="pc-back"><span class="stamp">♥︎</span><p class="pc-hw">next stop:<br>Turkey.</p><p class="pc-place">Turkey · someday</p></div>
+  </div>
+  <span class="postmark">AIR MAIL · WITH LOVE</span>
+  <svg class="stk" viewBox="0 0 100 80" style="left:56%;top:19%;width:4.4em;--r:-12deg"><use href="#s-butterfly"/></svg>
+</div></div>
+
+<!-- ================================================================
+     27 · A FULLY FURNISHED FUTURE
+     ================================================================ -->
+<div class="page p-future"><div class="pg">
+  <p class="fu-title">A <span>fully</span> furnished <span>future</span></p>
+  <div class="fu-heart">
+    <svg viewBox="0 0 100 92" preserveAspectRatio="none" aria-hidden="true"><path d="M50 89 C 20 70, 1 50, 2 28 C 3 10, 18 2, 30 2 C 40 2, 47 9, 50 16 C 53 9, 60 2, 70 2 C 82 2, 97 10, 98 28 C 99 50, 80 70, 50 89 Z"/></svg>
+    <div class="fu-shelf s1"><span class="box b-yellow">Rainy<br>days</span><span class="box b-pink">Peace<br>over ego</span><span class="box b-blue">Books</span></div>
+    <div class="fu-shelf s2"><span class="box b-cream">Clear<br>boundaries</span><span class="box b-yellow">Sunny<br>days</span><span class="box b-green">Family</span></div>
+    <div class="fu-shelf s3"><span class="box b-pink">Mihrimah<br>InshAllah</span><span class="box b-blue">Date night<br>forever</span><span class="box b-cream">Turkey</span></div>
+    <div class="fu-shelf s4"><span class="box b-green">Growing<br>old</span><span class="box b-yellow">Us</span></div>
+  </div>
+  <p class="fu-note">everything we’re packing for our cutsie house</p>
+  <svg class="stk" viewBox="0 0 100 100" style="left:6%;top:13%;width:3.4em;--r:-10deg"><use href="#s-daisy"/></svg>
+  <svg class="stk" viewBox="0 0 100 100" style="right:6%;bottom:9%;width:3.4em;--r:10deg"><use href="#s-smiley"/></svg>
+</div></div>
+
+<!-- ================================================================
+     28 · LAST LOOK
+     ================================================================ -->
+<div class="page p-last"><div class="pg">
+  <p class="ll-head">Last Look</p>
+  <figure class="ph ll-photo" data-img="35"></figure>
+  <p class="ll-cap"><b>The moment:</b> right now. Six months down, forever to go. Thank you for every page so far. I can’t wait to read the rest with you.</p>
+  <p class="ll-end">To be continued…</p>
+  <svg class="stk" viewBox="0 0 100 80" style="left:2%;top:14%;width:5em;--r:-18deg"><use href="#s-bow"/></svg>
+  <svg class="stk" viewBox="0 0 100 92" style="right:4%;top:69%;width:2.8em;--r:12deg"><use href="#s-heart"/></svg>
+</div></div>
+
+<!-- ================================================================
+     29 · BACK COVER
+     ================================================================ -->
+<div class="page p-back" data-density="hard"><div class="pg" data-nofolio>
+  <figure class="ph bleed" data-img="36"></figure>
+  <div class="back-shade"></div>
+  <div class="back-copy">
+    <p class="bc-script">Happy Anniversary</p>
+    <p class="bc-line">Subscribe for a lifetime.</p>
+    <p class="bc-small">See you at one year? · <span data-name="a"></span> &amp; <span data-name="b"></span></p>
+  </div>
+  <svg class="stk" viewBox="0 0 100 100" style="left:10%;top:60%;width:2.6em;--r:10deg"><use href="#s-sparkle"/></svg>
+  <svg class="bc-logo" viewBox="0 0 1000 240"><text x="500" y="210" text-anchor="middle" textLength="940" lengthAdjust="spacingAndGlyphs" data-cfg="title">VOGUE</text></svg>
+  <div class="barcode light"><span></span><small>Nº 6 · Forever edition</small></div>
+</div></div>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ============ NOW PLAYING (record player) ============ -->
+<div class="np" id="np" hidden>
+  <div class="np-head">
+    <span class="np-disc"></span>
+    <p><b data-song="title"></b><span data-song="artist"></span></p>
+    <button class="np-close" id="npClose" aria-label="Stop and close">×</button>
+  </div>
+  <div class="np-frame"><div id="ytFrame"></div></div>
+</div>
+
+<!-- ============ CONTROLS ============ -->
+<nav class="controls">
+  <button class="nav-btn" id="prevBtn" aria-label="Previous page">
+    <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <div class="page-info">
+    <span id="pageLabel">Cover</span>
+    <div class="progress"><i id="progressBar"></i></div>
+  </div>
+  <button class="nav-btn" id="nextBtn" aria-label="Next page">
+    <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+</nav>
+<p class="hint" id="hint">Drag a corner, swipe, or use ← → to turn the page</p>
+
+<script src="js/vendor/page-flip.browser.js"></script>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
